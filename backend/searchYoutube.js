@@ -2,9 +2,7 @@ const axios = require('axios');
 
 const searchYoutube = async (query) => {
   try {
-    const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
-      params: {
-        key: 'AIzaSyDfkvW2LcgTN1ERNX4mf7mbHAvw2mX937U',
+    const response = await axios.',
         part: 'snippet',
         q: query,
         type: 'video',
