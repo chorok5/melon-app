@@ -13,6 +13,11 @@ dist-ssr
 *.local
 
 .env
+.searchYoutube.js
+.output.css
+
+searchYoutube.js
+output.css
 
 # Editor directories and files
 .vscode/*

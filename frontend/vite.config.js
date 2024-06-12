@@ -10,6 +10,7 @@ export default defineConfig({
     proxy:{
       '/api':{
         target:'http://localhost:5000',
+        changeOrigin: true,
       }
     }
   },
@@ -18,4 +19,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
     },
   },
-})
+  optimizeDeps: {
+    exclude: ['express', 'path', 'fs', 'events']
+  }
+});

@@ -12,7 +12,7 @@ app.use(cors());
 app.get('/scrape', async (req, res) => {
     try {
         const url = req.query.url; // URL을 프론트엔드에서 받아옴
-        console.log('URL 로그:', url);
+        //console.log('URL 로그:', url);
         
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
@@ -33,7 +33,7 @@ app.get('/scrape', async (req, res) => {
           // 플레이리스트 db에 저장하기
           savePlaylist(songs);
 
-          console.log('Scraped data:', songs);
+          //console.log('Scraped data:', songs);
 
           res.json(songs);
 
